@@ -1,0 +1,241 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\large{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\large{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\large #2} \\
+      \textit{\large#3} & \textit{\large #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\large#1} & \textit{\large #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & \textbf{ #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Oleg Bobrov} \\ \vspace{1pt}
+    %123 Street Name, Town, State 12345 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +79112846167 ~ \href{mailto:oleg.bobrov.m@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{oleg.bobrov.m@gmail.com}} ~ 
+    \href{https://t.me/olezhkabobrov//}{\raisebox{-0.2\height}\faTelegram\ \underline{t.me/olezhkabobrov}}  ~
+    \href{https://github.com/olezhabobrov}{\raisebox{-0.2\height}\faGithub\ \underline{olezhabobrov}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Research University Higher School of Economics}{Sept. 2020 -- June 2024 }
+      {Bachelor of Applied Mathematics and Computer Science}{St. Petersburg, Russia}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        % \begin{multicols}{4}
+            \begin{itemize}[]
+                \item\large C++, Algorithms and Data Structures,  Unix,  Calculus, Linear Algebra
+ 
+            \end{itemize}
+        % \end{multicols}
+        % \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\begin{comment}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Electronics Company}{May 2020 -- August 2020}
+      {Software Engineer Intern}{City, State}
+      \resumeItemListStart
+        \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+        \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+        \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+        \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Startup, Inc}{May 2019 -- August 2019}
+      {Front End Developer Intern}{City, State}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+\end{comment}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{{\href{https://github.com/olezhabobrov/Quoridor}{\underline{Implementation of board game Quoridor with bot}}}} $|$ \emph{C++, Qt}}{}
+      \resumeItemListStart
+        \resumeItem{Developed GUI board game Quoridor for 2 players}
+        \resumeItem{Players can play against each other or against bot working with MiniMax algorithm}
+        \resumeItem{Achieved the search depth of 4 using alpha-beta pruning}        
+
+      \resumeItemListEnd 
+      \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{{\href{https://github.com/Code-team-open-source/Code-team}{\underline{Cooperative party game}}}} $|$ \emph{C++, Qt, winsock} }{}
+          \resumeItemListStart
+            \resumeItem{Created Code-team as a part of University course in the team of 3 students}
+            \resumeItem{Code-team is local cooperative multiplayer game challenging peoples' reaction and communication}
+            \resumeItem{Designed and implemented the game architecture and logic between server and players using thread safe queues}
+          \resumeItemListEnd
+         \vspace{-13pt}
+
+    \resumeProjectHeading
+      {\textbf{University assignments} $|$ \emph{C++, C, boost}}{}
+      \resumeItemListStart
+        \resumeItem{Wrote projects using Object-oriented programming, templates, boost threads}
+        \resumeItem{Implemented smart pointers, vector with strong exception safety, simple editor of images with bmp format (images can be cropped and rotated)}
+
+      \resumeItemListEnd 
+
+          \vspace{-8pt}
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \large{\item{
+     \textbf{Languages}{: C++, C, Python} \\
+     \textbf{Technologies/Frameworks}{: Qt, Git, CMake, \LaTeX} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\begin{comment}
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+            \resumeItemListStart
+                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+\end{comment}
+
+
+\end{document}
