@@ -75,7 +75,7 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\large #2} \\
+      #1 & \textbf{\large #2} \\
       \textit{\large#3} & \textit{\large #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -129,19 +129,18 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
+      \resumeSubheading
+          {\textbf{\large{Jacobs University of Bremen}}}{Sept. 2022 -- June 2023 }
+          {\large{Bachelor of Computer Science}}{Bremen, Germany}
+        \resumeSubheading
+            {\quad \textbf{\textit{Relevant Coursework:}}}{}
+            {\quad ML, Kotlin, Database internals, Parallel programming, Mathematical Statistics}{}
     \resumeSubheading
-      {\large{National Research University Higher School of Economics}}{Sept. 2020 -- June 2022 }
+      {\textbf{\large{National Research University Higher School of Economics}}}{Sept. 2020 -- June 2022 }
       {\large{Bachelor of Applied Mathematics and Computer Science}}{St. Petersburg, Russia}
     \resumeSubheading
-        {\quad \textit{Relevant Coursework:}}{}
+        {\quad \textbf{\textit{Relevant Coursework:}}}{}
         {\quad C++, Java, Algorithms and Data Structures,  Calculus, Linear Algebra, Functional Programming}{}
-  
-    \resumeSubheading
-      {\large{Jacobs University of Bremen}}{Sept. 2022 -- June 2023 }
-      {\large{Bachelor of Computer Science}}{Bremen, Germany}
-    \resumeSubheading
-        {\quad \textit{Relevant Coursework:}}{}
-        {\quad ML, Kotlin, Database internals, Parallel programming, Mathematical Statistics}{}
   \resumeSubHeadingListEnd
 
 %------RELEVANT COURSEWORK-------
@@ -160,11 +159,25 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\textbf{Software analysis intern at Huawei} $|$ \emph{C++, KLEE, gRPC}
-      }{Feb. 2022 -- June 2022}
+    \resumeSubheading
+      {\textbf{JetBrains} 
+      $|$ \emph{Kotlin, Kotlin Compiler, Fuzzing, Vert.x}
+      }{Nov. 2022 -- Aug. 2023}
+      {Research intern}{Munich, Germany}
       \resumeItemListStart
-        \resumeItem{Developed a static code analyzer for C/C++ based on KLEE (symbolic execution engine) }
+        \resumeItem{Redesigned and reimplemented the existing \href{https://github.com/olezhabobrov/fuzzer/tree/klibFuzzing-oleg-bobrov}{\underline{\textbf{Kotlin compiler fuzzer}}} as a loosely-coupled
+system to support easier extension, experiments and evaluation}
+        \resumeItem{Added support for the Kotlin/Native compiler and implemented klib-specific transformations to discover problems with ABI of evolving libraries}
+        \resumeItem{
+        Revealed and reported over \href{https://youtrack.jetbrains.com/issues?q=tag:\%20found-by-fuzzer\%20reporter:\%20oleg.bobrov\%20}{\underline{\textbf{15 new vulnerabilities}}}  using Kotlin fuzzer
+        }
+      \resumeItemListEnd
+  
+    \resumeSubheading
+      {\textbf{Huawei} $|$ \emph{C++, KLEE, gRPC}
+      }{Feb. 2022 -- June 2022}{Research intern}{St. Petersburg, Russia}
+      \resumeItemListStart
+        \resumeItem{Developed a \href{https://github.com/UnitTestBot/UTBotCpp}{\underline{\textbf{static code analyzer}}} for C/C++ based on KLEE (symbolic execution engine) }
         \resumeItem{Result represented in SARIF format, showing a full stack trace of a possible error with the initial values, which would cause this}
         \resumeItem{On tested projects showed \textbf{10 times more} mistakes than PVS-studio and \textbf{8 times more} mistakes more than CppCheck, however it's more time-consuming }
       \resumeItemListEnd
@@ -197,15 +210,6 @@
           \resumeItemListEnd
          \vspace{-13pt}
 
-    \resumeProjectHeading
-      {\textbf{University assignments} $|$ \emph{C++, C, boost}}{}
-      \resumeItemListStart
-        \resumeItem{Wrote projects using Object-oriented programming, templates, threads}
-        \resumeItem{Implemented smart pointers, vector with strong exception safety, simple editor of images with bmp format (images can be cropped and rotated)}
-
-      \resumeItemListEnd 
-
-          \vspace{-8pt}
     \resumeSubHeadingListEnd
 \vspace{-5pt}
 
@@ -215,8 +219,8 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \large{\item{
-     \textbf{Languages}{: Java, Kotlin, C++, C, Python} \\
-     \textbf{Technologies/Frameworks}{: Qt, SQL, KLEE, Git, CMake, \LaTeX} \\
+     \textbf{Languages}{: Kotlin, Java, C++, C, Python} \\
+     \textbf{Technologies/Frameworks}{: Spring, Vert.x, Qt, SQL, KLEE, Git, CMake} \\
     }}
  \end{itemize}
  \vspace{-16pt}
@@ -237,4 +241,3 @@
 
 
 \end{document}
-
