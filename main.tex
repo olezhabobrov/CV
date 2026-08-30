@@ -15,24 +15,10 @@
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
-\usepackage{fontawesome5}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -50,12 +36,12 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Section formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure that generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -67,31 +53,31 @@
 }
 
 \newcommand{\classesList}[4]{
-    \item\large{
-        {#1 #2 #3 #4 \vspace{-2pt}}
+  \item\large{
+    {#1 #2 #3 #4 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      #1 & \textbf{\large #2} \\
-      \textit{\large#3} & \textit{\large #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    #1 & \textbf{\large #2} \\
+    \textit{\large#3} & \textit{\large #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\large#1} & \textit{\large #2} \\
-    \end{tabular*}\vspace{-7pt}
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\large#1} & \textit{\large #2} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      #1 & \textbf{ #2}\\
-    \end{tabular*}\vspace{-7pt}
+  \item
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    #1 & \textbf{ #2}\\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -105,157 +91,116 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
 
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
-    {\Huge \scshape Oleg Bobrov} \\ \vspace{1pt}
-    %123 Street Name, Town, State 12345 \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faLinkedin\ \href{https://www.linkedin.com/in/oleg-bobrov-77a578210/}{  \underline{LinkedIn}} ~ \href{mailto:oleg.bobrov.m@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{oleg.bobrov.m@gmail.com}} ~ 
-    \href{https://t.me/olezhkabobrov//}{\raisebox{-0.2\height}\faTelegram\ \underline{t.me/olezhkabobrov}}  ~
-    \href{https://github.com/olezhabobrov}{\raisebox{-0.2\height}\faGithub\ \underline{olezhabobrov}}
-    \vspace{-8pt}
+  {\Huge \scshape Oleg Bobrov} \\ \vspace{1pt}
+  \small
+  \raisebox{-0.1\height}\faLinkedin\ \href{https://www.linkedin.com/in/oleg-bobrov-77a578210/}{\underline{LinkedIn}} ~
+  \href{mailto:oleg.bobrov.m@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{oleg.bobrov.m@gmail.com}} ~
+  \href{https://t.me/olezhkabobrov/}{\raisebox{-0.2\height}\faTelegram\ \underline{t.me/olezhkabobrov}} ~
+  \href{https://github.com/olezhabobrov}{\raisebox{-0.2\height}\faGithub\ \underline{olezhabobrov}}
+  \vspace{-8pt}
 \end{center}
-
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-      \resumeSubheading
-          {\textbf{\large{Constructor University}}}{Sept. 2022 -- Aug. 2023 }
-          {\large{Bachelor of Computer Science}}{Bremen, Germany}
-        \resumeSubheading
-            {\quad \textbf{\textit{Relevant Coursework:}}}{}
-            {\quad ML, Kotlin, Database internals, Parallel programming, Mathematical Statistics}{}
-    \resumeSubheading
-      {\textbf{\large{National Research University Higher School of Economics}}}{Sept. 2020 -- June 2022 }
-      {\large{Bachelor of Applied Mathematics and Computer Science}}{St. Petersburg, Russia}
-    \resumeSubheading
-        {\quad \textbf{\textit{Relevant Coursework:}}}{}
-        {\quad C++, Java, Algorithms and Data Structures,  Calculus, Linear Algebra, Functional Programming}{}
-  \resumeSubHeadingListEnd
-
-%------RELEVANT COURSEWORK-------
-% \section{Relevant Coursework}
-%     %\resumeSubHeadingListStart
-%         % \begin{multicols}{4}
-%             \begin{itemize}[]
-%                 \item\large C++, Algorithms and Data Structures,  Unix,  Calculus, Linear Algebra
- 
-%             \end{itemize}
-%         % \end{multicols}
-        % \vspace*{2.0\multicolsep}
-    %\resumeSubHeadingListEnd
-
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {\textbf{Exasol} 
-      $|$ \emph{C++, Compilers, Databases, SQL, Yacc}
-      }{Dec. 2023 -- Present}
-      {Software Engineer}{Nuremberg, Germany}
-      \resumeItemListStart
-        \resumeItem{Contributed to the development of the Compiler and Engine components of the Exasol relational analytics database, focusing on query graph optimizations }
-        \resumeItem{Implemented an algorithm to detect and materialize identical subqueries, improving performance by up to 65\% on some TPC-DS benchmark queries}
-        \resumeItem{Developed and optimized query execution strategies for complex joins with unions}
-        \resumeItem{Participated in the implementation and testing of a new data type, updated embedded libraries, and performed normal maintenance work  }      
-        
-        
-        \resumeItemListEnd
+\resumeSubHeadingListStart
 
-    
-    \resumeSubheading
-      {\textbf{JetBrains} 
-      $|$ \emph{Kotlin, Kotlin Compiler, Fuzzing, Vert.x}
-      }{Nov. 2022 -- Aug. 2023}
-      {Research intern}{Munich, Germany}
-      \resumeItemListStart
-        \resumeItem{Redesigned and reimplemented the existing \href{https://github.com/olezhabobrov/fuzzer/tree/klibFuzzing-oleg-bobrov}{\underline{\textbf{Kotlin compiler fuzzer}}} as a loosely-coupled
-system to support easier extension, experiments and evaluation}
-        \resumeItem{Added support for the Kotlin/Native compiler and implemented klib-specific transformations to discover problems with ABI of evolving libraries}
-        \resumeItem{
-        Revealed and reported over \href{https://youtrack.jetbrains.com/issues?q=tag:\%20found-by-fuzzer\%20reporter:\%20oleg.bobrov\%20}{\underline{\textbf{15 new vulnerabilities}}}  using Kotlin fuzzer
-        }
-      \resumeItemListEnd
-  
-    \resumeSubheading
-      {\textbf{Huawei} $|$ \emph{C++, KLEE, gRPC}
-      }{Feb. 2022 -- June 2022}{Research intern}{St. Petersburg, Russia}
-      \resumeItemListStart
-        \resumeItem{Developed a \href{https://github.com/UnitTestBot/UTBotCpp}{\underline{\textbf{static code analyzer}}} for C/C++ based on KLEE (symbolic execution engine) }
-        \resumeItem{Result represented in SARIF format, showing a full stack trace of a possible error with the initial values, which would cause this}
-        \resumeItem{On tested projects showed \textbf{10 times more} mistakes than PVS-studio and \textbf{8 times more} mistakes more than CppCheck, however it's more time-consuming }
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-% \vspace{-16pt}
+  \resumeSubheading
+    {\textbf{Exasol} $|$ \emph{C++, Compilers, Databases, SQL, Yacc, Algorithms on Graphs}}
+    {Dec. 2023 -- Present}
+    {Software Engineer}
+    {Nuremberg, Germany}
+    \resumeItemListStart
+      \resumeItem{Contributed to the development of the Compiler and Engine components of the Exasol relational analytics database, focusing on query graph optimizations}
+      \resumeItem{Implemented an algorithm to detect and materialize identical subqueries, improving performance by up to 65\% on some TPC-DS benchmark queries}
+      \resumeItem{Developed and optimized query execution algorithms for complex joins with unions}
+      \resumeItem{Participated in the implementation and testing of new timestamp and vector data types, updated embedded libraries}
+      \resumeItem{Adopted spec-driven development workflows, contributed to enablement of AI capabilities on a large legacy codebase}
+    \resumeItemListEnd
 
+  \resumeSubheading
+    {\textbf{JetBrains} $|$ \emph{Kotlin, Compilers, Fuzzing, Vert.x, LLVM}}
+    {Nov. 2022 -- Aug. 2023}
+    {Research intern}
+    {Munich, Germany}
+    \resumeItemListStart
+      \resumeItem{Redesigned and reimplemented the existing \href{https://github.com/olezhabobrov/fuzzer/tree/klibFuzzing-oleg-bobrov}{\underline{\textbf{Kotlin compiler fuzzer}}} as a loosely-coupled system to support easier extension, experiments and evaluation}
+      \resumeItem{Added support for the LLVM-based Kotlin/Native compiler and implemented klib-specific transformations to discover problems with ABI of evolving libraries}
+      \resumeItem{Revealed and reported over \href{https://youtrack.jetbrains.com/issues?q=tag:\%20found-by-fuzzer\%20reporter:\%20oleg.bobrov\%20}{\underline{\textbf{15 new vulnerabilities}}} using Kotlin fuzzer}
+    \resumeItemListEnd
 
+  \resumeSubheading
+    {\textbf{Huawei} $|$ \emph{C++, KLEE, LLVM, gRPC}}
+    {Feb. 2022 -- June 2022}
+    {Research intern}
+    {St. Petersburg, Russia}
+    \resumeItemListStart
+      \resumeItem{Developed a \href{https://github.com/UnitTestBot/UTBotCpp}{\underline{\textbf{static code analyzer}}} for C/C++ based on KLEE (symbolic execution engine built on top of the LLVM compiler infrastructure)}
+      \resumeItem{Result represented in SARIF format, showing a full stack trace of a possible error with the initial values which would cause this}
+      \resumeItem{On tested projects showed \textbf{10 times more} mistakes than PVS-studio and \textbf{8 times more} mistakes than CppCheck, however it's more time-consuming}
+    \resumeItemListEnd
 
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {\textbf{\large{Constructor University}}}
+    {Sept. 2022 -- Aug. 2023}
+    {\large{Bachelor of Computer Science}}
+    {Bremen, Germany}
+  \resumeSubheading
+    {\quad \textbf{\textit{Relevant Coursework:}}}
+    {}
+    {\quad Database internals, Parallel programming, ML, Kotlin, Mathematical Statistics}
+    {}
+
+  \resumeSubheading
+    {\textbf{\large{National Research University Higher School of Economics}}}
+    {Sept. 2020 -- June 2022}
+    {\large{Bachelor of Applied Mathematics and Computer Science}}
+    {St. Petersburg, Russia}
+  \resumeSubheading
+    {\quad \textbf{\textit{Relevant Coursework:}}}
+    {}
+    {\quad C++, Java, Algorithms and Data Structures, Calculus, Linear Algebra, Functional Programming}
+    {}
+
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Pet Projects}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-      {{\href{https://github.com/olezhabobrov/Quoridor}{\underline{Implementation of the board game Quoridor with a bot}}} $|$ \emph{C++, Qt}}{}
-      \begin{comment}
-      \resumeItemListStart
-        \resumeItem{Developed the GUI board game Quoridor for 2 players}
-        \resumeItem{Players can play against each other or against bot working with \textbf{MiniMax algorithm}}
-        \resumeItem{Achieved the \textbf{search depth of 4} using \textbf{alpha-beta pruning} with time of calculations less than \textbf{1 second} on my computer}        
-      \resumeItemListEnd 
-    \end{comment}
-      \vspace{-20pt}
+\vspace{-5pt}
+\resumeSubHeadingListStart
 
-      \resumeProjectHeading
-          {{\href{https://github.com/Code-team-open-source/Code-team}{\underline{Cooperative party game Code-team}}} $|$ \emph{C++, Qt, winsock} }{}
-          \begin{comment}
-          \resumeItemListStart
-            \resumeItem{Code-team is a local cooperative multiplayer game challenging peoples' reaction and communication}
-            \resumeItem{Developed Code-team in the team of 3 students as a part of a first-year course project}
-            \resumeItem{Designed and implemented the game architecture and logic between the server and players using thread safe queues}
-          \resumeItemListEnd
-          \end{comment}
-         \vspace{-13pt}
+  \resumeProjectHeading
+    {\href{https://github.com/olezhabobrov/Quoridor}{\underline{Implementation of the board game Quoridor with a bot}} $|$ \emph{C++, Qt}}
+    {}
+  \vspace{-20pt}
 
-    \resumeSubHeadingListEnd
+  \resumeProjectHeading
+    {\href{https://github.com/Code-team-open-source/Code-team}{\underline{Cooperative party game Code-team}} $|$ \emph{C++, Qt, winsock}}
+    {}
+  \vspace{-13pt}
+
+\resumeSubHeadingListEnd
 \vspace{-5pt}
 
-
-%
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \large{\item{
-     \textbf{Languages}{:  C++, C, Kotlin, Java, Python} \\
-     \textbf{Technologies/Frameworks}{: Vert.x, Qt, SQL, KLEE, Git, CMake} \\
-    }}
- \end{itemize}
- \vspace{-16pt}
-
-\begin{comment}
-%-----------INVOLVEMENT---------------
-\section{Leadership / Extracurricular}
-    \resumeSubHeadingListStart
-        \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
-            \resumeItemListStart
-                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
-            \resumeItemListEnd
-        
-    \resumeSubHeadingListEnd
-\end{comment}
-
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \large{\item{
+    \textbf{Languages}{: C++, Kotlin, Java, Python} \\
+    \textbf{Technologies/Frameworks}{: Vert.x, Qt, SQL, KLEE, Git, CMake} \\
+  }}
+\end{itemize}
+\vspace{-16pt}
 
 \end{document}
